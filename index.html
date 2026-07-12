@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HARDCPY</title>
+  <meta name="description" content="HARDCPY — an independent archive of rare fashion and art books, magazines, catalogs and lookbooks. Yohji Yamamoto, Margiela, Comme des Garçons, Yoshitomo Nara and more.">
+  <link rel="canonical" href="https://hardcpy.shop/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HARDCPY">
+  <meta property="og:title" content="HARDCPY">
+  <meta property="og:description" content="An independent archive of rare fashion and art books, magazines, catalogs and lookbooks.">
+  <meta property="og:url" content="https://hardcpy.shop/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%236e2b2b'/></svg>">
+</head>
+<body>
+
+  <div id="intro" aria-hidden="true"><span>HARDcpy</span></div>
+
+  <header class="site-head">
+    <a class="logo" href="index.html">HARDcpy</a>
+    <button class="navlink stack-tab" data-cart-tab>Stack (0)</button>
+  </header>
+  <button id="menu-tab" class="burger" aria-controls="menu-overlay" aria-expanded="false" aria-label="Menu">
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <section class="hero" id="hero" title="Menu">
+    <img src="assets/full/1001.jpg" alt="HARDcpy — featured publication">
+  </section>
+
+  <div class="meta">
+    <span class="meta-state"><b id="disp-filter">All</b> · <b id="disp-mode">Grid</b></span>
+    <button id="refine-tab" class="navlink" aria-controls="refine-panel" aria-expanded="false">Refine</button>
+  </div>
+
+  <main>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <div id="list" class="list" hidden></div>
+    <p id="empty" class="empty" hidden>NOTHING MATCHES — CLEAR YOUR FILTERS.</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 HARDCPY</span>
+  </footer>
+
+  <nav id="menu-overlay" class="menu-overlay">
+    <div class="menu-inner">
+      <h2 class="menu-brand"><a href="index.html">HARD<br>cpy</a></h2>
+      <ul class="menu-list">
+        <li><a href="index.html">Shop All</a></li>
+        <li><a href="index.html?type=Books">Books</a></li>
+        <li><a href="index.html?type=Magazines">Magazines</a></li>
+        <li><a href="index.html?type=Catalogs">Catalogs</a></li>
+        <li><a href="#" data-cart-tab>Stack</a></li>
+      </ul>
+      <p class="menu-about">
+        HARDcpy is a curated library of fashion, art books, magazines, DVDs, catalogs, etc.
+      </p>
+    </div>
+  </nav>
+
+  <aside id="refine-panel" class="refine-panel" hidden>
+    <button class="panel-close" data-close="refine">×</button>
+    <h2 class="refine-heading">REFINE</h2>
+    <p class="refine-count"><span id="refine-count-n"></span></p>
+
+    <fieldset class="refine-group">
+      <legend>DISPLAY</legend>
+      <label><input type="radio" name="mode" value="grid" checked> GRID</label>
+      <label><input type="radio" name="mode" value="list"> LIST</label>
+    </fieldset>
+
+    <fieldset class="refine-group">
+      <legend>SORT</legend>
+      <label><input type="radio" name="sort" value="new" checked> NEW TO OLD</label>
+      <label><input type="radio" name="sort" value="old"> OLD TO NEW</label>
+      <label><input type="radio" name="sort" value="price-asc"> PRICE: LOW TO HIGH</label>
+      <label><input type="radio" name="sort" value="price-desc"> PRICE: HIGH TO LOW</label>
+      <label><input type="radio" name="sort" value="az"> A TO Z</label>
+    </fieldset>
+
+    <fieldset class="refine-group" id="type-group">
+      <legend>TYPE</legend>
+    </fieldset>
+
+    <fieldset class="refine-group" id="topic-group">
+      <legend>TOPICS</legend>
+    </fieldset>
+
+    <button id="refine-clear" class="refine-clear">CLEAR ALL</button>
+  </aside>
+
+  <script src="data/books.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

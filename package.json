@@ -1,0 +1,9 @@
+{
+  "name": "hardcpy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HARDCPY storefront + Stripe checkout (static site with Vercel serverless functions in /api)",
+  "dependencies": {
+    "stripe": "^17.5.0"
+  }
+}
